@@ -50,7 +50,7 @@ description = "Main QuPath application."
 ext {
   macOSDefaultVersion = "1"
   qupathVersion = gradle.ext.qupathVersion
-  qupathAppName = "QuPath-${qupathVersion}"
+  qupathAppName = "Seongkohn Slide Viewer - ${qupathVersion}"
 }
 
 // Put the output in the main directory so it is easier to find

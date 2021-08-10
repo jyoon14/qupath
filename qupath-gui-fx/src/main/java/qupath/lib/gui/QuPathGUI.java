@@ -1272,7 +1272,7 @@ public class QuPathGUI {
 			textArea.setEditable(false);
 			Platform.runLater(() -> {
 				Stage stage = new Stage();
-				stage.setTitle("QuPath");
+				stage.setTitle("Seongkohn Slide Viewer");
 				stage.initOwner(getStage());
 				Scene scene = new Scene(textArea);
 				textArea.setPrefHeight(500);
@@ -1442,9 +1442,9 @@ public class QuPathGUI {
 	private static File getDefaultQuPathUserDirectory() {
 		Version version = getVersion();
 		if (version != null)
-			return Paths.get(System.getProperty("user.home"), "QuPath", String.format("v%d.%d", version.getMajor(), version.getMinor())).toFile();
+			return Paths.get(System.getProperty("user.home"), "Seongkohn Slide Viewer", String.format("v%d.%d", version.getMajor(), version.getMinor())).toFile();
 		else
-			return Paths.get(System.getProperty("user.home"), "QuPath").toFile();
+			return Paths.get(System.getProperty("user.home"), "Seongkohn Slide Viewer").toFile();
 	}
 	
 	
@@ -4114,7 +4114,7 @@ public class QuPathGUI {
 	
 	private StringBinding titleBinding = Bindings.createStringBinding(
 				() -> {
-					String name = "QuPath";
+					String name = "Seongkohn Slide Viewer";
 					var versionString = getVersionString();
 					if (versionString != null)
 						name = name + " (" + versionString + ")";
