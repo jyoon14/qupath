@@ -50,8 +50,11 @@ description = "Main QuPath application."
 ext {
   macOSDefaultVersion = "1"
   qupathVersion = gradle.ext.qupathVersion
-  qupathAppName = "Seongkohn Slide Viewer - ${qupathVersion}"
+  qupathAppName = "Seongkohn Slide Viewer"
 }
+
+//  qupathAppName = "Seongkohn Slide Viewer - ${qupathVersion}"
+
 
 // Put the output in the main directory so it is easier to find
 project.buildDir = rootProject.file('build')
